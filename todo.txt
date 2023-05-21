@@ -1,0 +1,15 @@
+Implement the '+/-' operator
+    • if op is clicked change the total to negative.
+
+function posOrNeg(){
+    let pos = true
+    if(op){
+        change to neg
+    }
+    pos = false
+}
+
+^^ ??? idk
+
+
+add w3schools to resources

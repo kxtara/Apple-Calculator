@@ -1,15 +1,16 @@
 Implement the '+/-' operator
     • if op is clicked change the total to negative.
+(CHECKED)
 
-function posOrNeg(){
-    let pos = true
-    if(op){
-        change to neg
-    }
-    pos = false
-}
+Add w3schools to resources
+(CHECKED)
 
-^^ ??? idk
+Remove the leading 0 from total
+    • I don't know how i'll implement this yet
 
+Implement the "%" operator
+    • test / 100
+(CHECKED)
 
-add w3schools to resources
+Implement "+,/,*,-,=" operators
+   • I have to research an idea I have about the implementation 

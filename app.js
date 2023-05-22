@@ -1,11 +1,14 @@
 let total = document.querySelector(".total");
-let clear = document.querySelector(".clear");
+let clear = document.querySelector(".btn-clear");
 let button = document.querySelectorAll("button");
 let divide = document.querySelector(".btn-divide");
 let equal = document.querySelector(".btn-equal");
+let plusNegative = document.querySelector(".btn-plus-negative")
+let percent = document.querySelector(".btn-percent")
 var test;
 
 // for each button that's clicked
+
 button.forEach((button) => {
   button.addEventListener("click", (event) => {
     test = total.textContent += button.value;
@@ -13,14 +16,28 @@ button.forEach((button) => {
 });
 
 // clear the total div
+
 clear.addEventListener("click", (event) => {
   total.textContent = 0;
 });
 
 // just a test case
+
 divide.addEventListener("click", (event) => {
   test = total.textContent += "/";
 });
+
+// changing total to negative/positive
+
+plusNegative.addEventListener("click",(event) => {
+  total.textContent *= -1
+})
+
+// percent of total
+
+percent.addEventListener("click",(event) =>{
+  total.textContent /= 100
+})
 
 /*
 

@@ -78,6 +78,8 @@ button.forEach(button => {
 
 - [Open AI](https://chat.openai.com/) - This helped me with explaining different methods in JavaScript.
 
+- [W3Shools](https://www.w3schools.com/css/css_grid.asp) - This helped me implement the layout of the buttons for the calculator using CSS Grid.
+
 ## Author
 
 - Twitter - [@kiarahoheb](https://www.twitter.com/kiarahoheb)

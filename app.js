@@ -5,6 +5,7 @@ let divide = document.querySelector(".btn-divide");
 let equal = document.querySelector(".btn-equal");
 let plusNegative = document.querySelector(".btn-plus-negative")
 let percent = document.querySelector(".btn-percent")
+let del = document.querySelector(".delete")
 var test;
 
 // for each button that's clicked
@@ -12,6 +13,10 @@ var test;
 button.forEach((button) => {
   button.addEventListener("click", (event) => {
     test = total.textContent += button.value;
+    // removing leading 0's
+    if(total.textContent[0] === '0' && !total.textContent.includes('.')){
+      total.textContent = total.textContent.substring(1)
+    }
   });
 });
 
@@ -39,6 +44,11 @@ percent.addEventListener("click",(event) =>{
   total.textContent /= 100
 })
 
+// delete button
+
+del.addEventListener('click',(event) => {
+  total.textContent = total.textContent.slice(0,-1)
+})
 /*
 
 querySelectorAll: collects and stores all refrences to all the input elements.

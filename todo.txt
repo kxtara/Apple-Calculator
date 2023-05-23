@@ -7,6 +7,7 @@ Add w3schools to resources
 
 Remove the leading 0 from total
     • I don't know how i'll implement this yet
+(CHECKED)
 
 Implement the "%" operator
     • test / 100
@@ -14,3 +15,6 @@ Implement the "%" operator
 
 Implement "+,/,*,-,=" operators
    • I have to research an idea I have about the implementation 
+
+Implement the removal of multiple '.'
+  • I don't know how i'll implement this yet

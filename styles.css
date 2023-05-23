@@ -44,6 +44,12 @@ button {
   background-color: rgb(107, 102, 102);
 }
 
+.delete{
+grid-column: 2/4;
+padding: 3px 0;
+margin-top: 5px;
+}
+
 .orange{
 background-color: #FF9500;
 }

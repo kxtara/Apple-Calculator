@@ -29,4 +29,10 @@ Implement the removal of multiple '.'
   • I don't know how i'll implement this yet
 (CHECKED)
 
+
 Delete button not working as expected
+
+btn-0 isn't working when there's just one num like '2'
+
+Removed extra space between '.' and zero when page is refreshed and user clicks '.' 
+(CHECKED)

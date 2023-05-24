@@ -16,5 +16,17 @@ Implement the "%" operator
 Implement "+,/,*,-,=" operators
    • I have to research an idea I have about the implementation 
 
+   1. if operators are clicked set the firstOperand to eqaul the total.textContent
+   2. set the total.textContent to an empty string 
+   3. when the 'equal' operand is clicked set the total.textContent to secondOperand
+   4. remove '=' from secondOperand
+   5. (?) concat firstOperand & secondOperand
+   6. disregard (5.) check to see which operator is in firstOperand
+   7. remove the operator then make the calculation
+   8. set total.textContent to the total
+
 Implement the removal of multiple '.'
   • I don't know how i'll implement this yet
+(CHECKED)
+
+Delete button not working as expected

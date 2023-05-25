@@ -31,8 +31,16 @@ Implement the removal of multiple '.'
 
 
 Delete button not working as expected
+(CHECKED)
 
 btn-0 isn't working when there's just one num like '2'
-
-Removed extra space between '.' and zero when page is refreshed and user clicks '.' 
 (CHECKED)
+Remove extra space between '.' and zero when page is refreshed and user clicks '.' 
+(CHECKED)
+
+Remove leading 0's if it's not a decimal number
+(CHECKED)
+
+Set limit of input to 11 digits
+
+figure out a way to evaluate input without eval()

@@ -40,7 +40,14 @@ Remove extra space between '.' and zero when page is refreshed and user clicks '
 
 Remove leading 0's if it's not a decimal number
 (CHECKED)
-
-Set limit of input to 11 digits
-
 figure out a way to evaluate input without eval()
+(CHECKED)
+
+fix percent
+(CHECKED)
+
+** make sure that there's a num infront & behind of operator
+
+** Set limit of input to 11 digits
+
+** fix the calculations of inputs like 3 + 3 + 6

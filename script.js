@@ -7,8 +7,8 @@ Calculator.prototype = {
     del.disabled = false;
   },
   percent: function () {
-    total.textContent /= 100;
-  },
+    total.textContent = parseInt(total.textContent) / 100
+    },
   plusNegative: function () {
     total.textContent *= -1;
   },
@@ -29,9 +29,23 @@ Calculator.prototype = {
     del.disabled = false;
   },
   equal : function(){
-    let res = eval(total.textContent)
-    total.textContent = res
-    del.disabled = true
+    const arr = total.textContent.split(' ')
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] === '+'){
+      const test = parseFloat(arr[i - 1]) + parseFloat(arr[i + 1])
+      console.log(test)
+      total.textContent = test
+    }else if(arr[i] === '-'){
+      const test = parseFloat(arr[i - 1]) - parseFloat(arr[i + 1])
+      total.textContent = test
+    }else if(arr[i] === '/'){
+      const test = parseFloat(arr[i - 1]) / parseFloat(arr[i + 1])
+      total.textContent = test
+    }if(arr[i] === '*'){
+      const test = parseFloat(arr[i - 1]) * parseFloat(arr[i + 1])
+      total.textContent = test
+    }
+  }
   }
 };
 
@@ -48,13 +62,12 @@ const calculator = new Calculator();
 const plus = document.querySelector(".btn-plus");
 const equal = document.querySelector(".btn-equal");
 
-let text = total.textContent.length;
-let regex = /^.{1,11}$/;
-
-if(!regex.test(text)){
-    numbers.disabled = true
-    console.log('regex')
-}
+// let text = total.textContent.length;
+// let regex = /^.{1,11}$/;
+// if(!regex.test(text)){
+//     numbers.disabled = true
+//     console.log('regex')
+// }
 
 total.textContent = 0;
 

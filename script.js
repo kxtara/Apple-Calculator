@@ -32,9 +32,17 @@ Calculator.prototype = {
     const arr = total.textContent.split(' ')
   for(let i = 0; i < arr.length; i++){
     if(arr[i] === '+'){
+      let bo = total.textContent.split(' ')
+      console.log(bo.length)
+      if(bo.length === 3){
       const test = parseFloat(arr[i - 1]) + parseFloat(arr[i + 1])
-      console.log(test)
       total.textContent = test
+      }else if(bo.length > 3){
+        // [3,+,3,*,3]
+        // if there's more than one operator 
+        // calc the first three values: 3 + 3
+        // then take that value and calc it by remaining values
+      }
     }else if(arr[i] === '-'){
       const test = parseFloat(arr[i - 1]) - parseFloat(arr[i + 1])
       total.textContent = test

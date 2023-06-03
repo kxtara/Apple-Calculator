@@ -12,10 +12,9 @@
 <!-- - [My process](#my-process) -->
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
-  <!-- - [Continued development](#continued-development) -->
+  - [Continued development](#continued-development)
   - [Useful resources](#useful-resources)
 - [Author](#author)
-<!-- - [Acknowledgments](#acknowledgments) -->
 
 ## Overview
 
@@ -44,10 +43,12 @@ Testing my JavaScript skills by creating a calculator.
 - Semantic HTML5 markup
 - CSS Grid
 - Mobile-first workflow
+- JavaScript
 
 ### What I learned
 
 I've learned to use CSS Grid & the forEach() method.
+
 ```css
 .container {
   display: grid;
@@ -61,6 +62,7 @@ I've learned to use CSS Grid & the forEach() method.
   box-shadow: 0px 0px 9px 2px #FF9500;
 }
 ```
+
 ```js
 button.forEach(button => {
     button.addEventListener('click',event => {
@@ -71,8 +73,9 @@ button.forEach(button => {
 
 
 
-<!-- ### Continued development -->
+### Continued development
 
+Building this project was a lot of fun for me, and moving forward, I want to work more and learn more about DOM. Since I know I will learn so much more from doing so, this project has actually increased my desire to use JavaScript in other projects.
 
 
 
@@ -85,3 +88,4 @@ button.forEach(button => {
 ## Author
 
 - Twitter - [@kiarahoheb](https://www.twitter.com/kiarahoheb)
+- LinkedIn - [@kiarahoheb](https://www.linkedin.com/in/kiara-hoheb-641157244/)

@@ -46,8 +46,26 @@ figure out a way to evaluate input without eval()
 fix percent
 (CHECKED)
 
-** make sure that there's a num infront & behind of operator
+** make sure that there's a num behind of operator
+(CHECKED)
+    after an operator is clicked disabled the operators until a number is clicked
 
 ** Set limit of input to 11 digits
+(CHECKED)
+
+** Set the numsBtn to false when an operator is clicked
+(CHECKED)
 
 ** fix the calculations of inputs like 3 + 3 + 6
+   when an operator is clicked calculate the expression if the length > 3
+   example:
+   3 + 3 + // will show 6+ 
+
+** fix eqaul method in calculator prototype
+(CHECKED)
+
+** if total.textContent[0] === '0' &&& total.textContent.length === 1
+    disable the percent btn
+
+** fix the plusNegative issue
+    idk right now

@@ -66,6 +66,7 @@ fix percent
 
 ** if total.textContent[0] === '0' &&& total.textContent.length === 1
     disable the percent btn
+(I think i fixed it)
 
 ** fix the plusNegative issue
-    idk right now
+(CHECKED)

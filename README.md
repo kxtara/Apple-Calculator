@@ -81,7 +81,7 @@ Building this project was a lot of fun for me, and moving forward, I want to wor
 
 ### Useful resources
 
-- [Open AI](https://chat.openai.com/) - This helped me with explaining different methods in JavaScript.
+- [Open AI](https://chat.openai.com/) - This helped me with explaining different methods and regular expressions in JavaScript.
 
 - [W3Shools](https://www.w3schools.com/css/css_grid.asp) - This helped me implement the layout of the buttons for the calculator using CSS Grid.
 

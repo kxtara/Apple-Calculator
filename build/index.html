@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" class="box-border">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- <link rel="stylesheet" href="styles.css" /> -->
+    <link href="css/style.css" rel="stylesheet" />
+    <title>Apple Calculator Dupe</title>
+  </head>
+  <body
+    class="m-0 grid h-screen w-full content-center justify-center bg-black p-0"
+  >
+    <div
+      class="container grid w-[16rem] grid-cols-[auto_auto_auto_auto] content-center justify-center gap-[7px] rounded-[4%] bg-black p-6 shadow-[0px_0px_9px_2px_#FF9500]"
+    >
+      <div
+        class="total col-[1_/_5] mb-[10px] min-h-[3rem] w-[13rem] rounded-[.2rem] border border-black bg-total p-[10px] text-right text-xl text-slate-50"
+        value="0"
+      >
+        <div class="firstOperand"></div>
+        <div class="secondOperand"></div>
+      </div>
+      <button class="btn-clear bg-light-gray text-black" value="">C</button>
+      <button class="btn-plus-negative bg-light-gray text-black" name="+/-">
+        &#43; / &minus;
+      </button>
+      <button class="btn-percent bg-light-gray text-black" value=" % ">
+        %
+      </button>
+      <button class="btn-divide operators bg-orange-btn" value=" / ">
+        &divide;
+      </button>
+      <button class="btn-7 num bg-dark-gray-btn" value="7">7</button>
+      <button class="btn-8 num bg-dark-gray-btn" value="8">8</button>
+      <button class="btn-9 num bg-dark-gray-btn" value="9">9</button>
+      <button class="btn-multiply operators bg-orange-btn" value="*">x</button>
+      <button class="btn-4 num bg-dark-gray-btn" value="4">4</button>
+      <button class="btn-5 num bg-dark-gray-btn" value="5">5</button>
+      <button class="btn-6 num bg-dark-gray-btn" value="6">6</button>
+      <button class="btn-minus operators bg-orange-btn" value=" - ">-</button>
+      <button class="btn-1 num bg-dark-gray-btn" value="1">1</button>
+      <button class="btn-2 num bg-dark-gray-btn" value="2">2</button>
+      <button class="btn-3 num bg-dark-gray-btn" value="3">3</button>
+      <button class="btn-plus operators bg-orange-btn" value="+">+</button>
+      <button class="btn-0 num col-[1_/_3] bg-dark-gray-btn" value="0">
+        0
+      </button>
+      <button class="btn-decimal bg-dark-gray-btn">.</button>
+      <button class="btn-equal bg-orange-btn" name="=">=</button>
+      <button
+        class="delete col-[2_/_4] mt-[5px] bg-orange-btn px-[0px] py-[3px]"
+      >
+        DEL
+      </button>
+    </div>
+    <script src="/build/js/script.js"></script>
+  </body>
+</html>

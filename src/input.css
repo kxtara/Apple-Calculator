@@ -1,0 +1,12 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+button {
+min-width: 40px;
+padding: 5px;
+border-radius: 20px;
+color: white;
+border:1px solid rgb(0, 0, 0);
+}

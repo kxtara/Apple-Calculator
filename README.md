@@ -26,7 +26,7 @@ Testing my JavaScript skills by creating a calculator.
 
 ### Screenshot
 
-![ScreenShot](https://raw.github.com/kxtara/calculator-js/main/images/calc.png)
+![ScreenShot](https://raw.github.com/kxtara/calculator-js/main/build/images/calc.png)
 
 
 <!-- ### Links

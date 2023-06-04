@@ -16,6 +16,7 @@ Calculator.prototype = {
     total.textContent = 0;
     decimal.disabled = false;
     del.disabled = false;
+    percent.disabled = true
     this.nonDisableNumbers()
     this.enableOperators()
   },
@@ -45,10 +46,10 @@ Calculator.prototype = {
     del.disabled = false;
   },
   equal: function () {
-    // splits the total.textContent at the operators while still including the operator in the array using ()- capture group
-    let regex = /([+\-*/])/
-    const arr = total.textContent.split(regex);
-    //console.log(arr.length)
+    // splits the total.textContent at a number or an operators with zero or more spaces while still including the operator in the array using ()- capture group
+    let regex = /(-?\d+(?:\.\d+)?|[+\-*/])\s*/g
+    const arr = total.textContent.split(regex).filter(item => item !== '');
+    console.log(arr)
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] === "+") {
         // console.log(arr);
@@ -85,12 +86,14 @@ const equal = document.querySelector(".btn-equal");
 const operators = document.querySelectorAll(".operators")
 
 total.textContent = 0;
+percent.disabled = true
 
 // disables operators after an operator is clicked
 operators.forEach(op => {
   op.addEventListener("click",(event) => {
   calculator.disableOperators()
   equal.disabled = true
+  percent.disabled = true
   calculator.equal()
   })
 })
@@ -100,6 +103,7 @@ numbers.forEach(numBtn => {
   numBtn.addEventListener("click",(event) => {
     calculator.enableOperators()
     equal.disabled = false
+    percent.disabled = false
   })
 })
 

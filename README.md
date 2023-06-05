@@ -1,7 +1,7 @@
 # Calculator with JavaScript
 
 ## Live Site
-- [Apple Calculator Dupe](https://applecalculatordupe.netlify.app/)
+- [Apple Calculator Dupe](https://apple-calculator-dupe.onrender.com/)
 
 ## Table of contents
 

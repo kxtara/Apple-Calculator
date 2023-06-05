@@ -8,14 +8,12 @@ Calculator.prototype = {
     operators.forEach(op => op.disabled = true)
   },
   nonDisableNumbers : function(){
-    numbers.forEach(numBtn => {
-      numBtn.disabled = false
-    })
+    numbers.forEach(numBtn => numBtn.disabled = false)
   },
   clear: function () {
     total.textContent = 0;
     decimal.disabled = false;
-    del.disabled = false;
+    this.enableDeleteButton()
     percent.disabled = true
     this.nonDisableNumbers()
     this.enableOperators()
@@ -37,10 +35,9 @@ Calculator.prototype = {
       total.textContent = 0;
       del.disabled = true;
     } else {
-      del.disabled = false;
+      this.enableDeleteButton()
       total.textContent = total.textContent.slice(0, -1);
     }
-    console.log(total.textContent)
   },
   enableDeleteButton: function () {
     del.disabled = false;
@@ -49,24 +46,19 @@ Calculator.prototype = {
     // splits the total.textContent at a number or an operators with zero or more spaces while still including the operator in the array using ()- capture group
     let regex = /(-?\d+(?:\.\d+)?|[+\-*/])\s*/g
     const arr = total.textContent.split(regex).filter(item => item !== '');
-    console.log(arr)
+    
     for (let i = 0; i < arr.length; i++) {
       if (arr[i] === "+") {
-        // console.log(arr);
         if (arr.length === 3) {
-          const test = parseFloat(arr[i - 1]) + parseFloat(arr[i + 1]);
-          total.textContent = test;
+          total.textContent = parseFloat(arr[i - 1]) + parseFloat(arr[i + 1]);
         }
       } else if (arr[i] === "-") {
-        const test = parseFloat(arr[i - 1]) - parseFloat(arr[i + 1]);
-        total.textContent = test;
+        total.textContent = parseFloat(arr[i - 1]) - parseFloat(arr[i + 1]);
       } else if (arr[i] === "/") {
-        const test = parseFloat(arr[i - 1]) / parseFloat(arr[i + 1]);
-        total.textContent = test;
+        total.textContent = parseFloat(arr[i - 1]) / parseFloat(arr[i + 1]);
       }
       if (arr[i] === "*") {
-        const test = parseFloat(arr[i - 1]) * parseFloat(arr[i + 1]);
-        total.textContent = test;
+        total.textContent = parseFloat(arr[i - 1]) * parseFloat(arr[i + 1]);
       }
     }
   },
@@ -111,10 +103,7 @@ button.forEach((btn) => {
   btn.addEventListener("click", (event) => {
     // if total length is >= 10 disable numBtn(all number buttons)
     if (total.textContent.length >= 10) {
-      numbers.forEach(numBtn => {
-        numBtn.disabled = true;
-        //calculator.nonDisableNumbers()
-      })
+      numbers.forEach(numBtn => numBtn.disabled = true)
     }
     // total is set to the btn val (if button 1 & 2 is clicked total will display 12)
     total.textContent += btn.value;

@@ -8,7 +8,6 @@
 - [Overview](#overview)
   - [The challenge](#the-challenge)
   - [Screenshot](#screenshot)
-  <!-- - [Links](#links) -->
 <!-- - [My process](#my-process) -->
   - [Built with](#built-with)
   - [What I learned](#what-i-learned)
@@ -29,13 +28,9 @@ Testing my JavaScript skills by creating a calculator.
 ![ScreenShot](https://raw.github.com/kxtara/calculator-js/main/build/images/calc.png)
 
 
-<!-- ### Links
+## My process
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com) -->
-
-<!-- ## My process -->
-
+I began by structuring the HTML and then adding some basic styling using TailwindCSS before utilizing JavaScript to implement the calculator's functionality. This project put me to the test in many different ways, but whenever I hit a wall, I took a break and subsequently returned to test out various solutions I had come up with during my break. The project's biggest challenge was getting the computations to function properly. You can find a list of everything I discovered to be broken in the "todo.txt" file, along with suggestions for how to fix it.
 
 
 ### Built with
@@ -44,6 +39,7 @@ Testing my JavaScript skills by creating a calculator.
 - CSS Grid
 - Mobile-first workflow
 - JavaScript
+- TailwindCSS
 
 ### What I learned
 
@@ -66,18 +62,14 @@ I've learned to use CSS Grid & the forEach() method.
 ```js
 button.forEach(button => {
     button.addEventListener('click',event => {
-        test = total.textContent += button.value
+        total.textContent += button.value
     })
 });
 ```
 
-
-
 ### Continued development
 
 Building this project was a lot of fun for me, and moving forward, I want to work more and learn more about DOM. Since I know I will learn so much more from doing so, this project has actually increased my desire to use JavaScript in other projects.
-
-
 
 ### Useful resources
 

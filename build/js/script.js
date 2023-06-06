@@ -60,6 +60,9 @@ Calculator.prototype = {
       if (arr[i] === "*") {
         total.textContent = parseFloat(arr[i - 1]) * parseFloat(arr[i + 1]);
       }
+      if(total>100000000){
+      total= total.toPrecision(4);
+      }
     }
   },
 };

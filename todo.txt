@@ -70,3 +70,14 @@ fix percent
 
 ** fix the plusNegative issue
 (CHECKED)
+
+** BUG TO FIX **
+    • remove NaN from total field
+    • 0 - 0 = NaN
+    • when an operator is clicked enable decimal button (0.2 + 0.2)
+    • overflow of text (overflow:hidden or round to 12/16 decimal place)
+
+** POTENTIAL CHANGES **
+    • key press events
+    • switch the Delete button with eqaul button
+    • if multiple operators are pressed back to back calculate with last operator entered
